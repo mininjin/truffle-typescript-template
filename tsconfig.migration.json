@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./build/migrations"
+  },
+  "include": [
+    "./migrations/*.ts",
+    "./types/**/*.ts"
+  ]
+}

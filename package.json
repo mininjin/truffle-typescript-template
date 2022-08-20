@@ -1,0 +1,32 @@
+{
+  "name": "truffle-typescript-template",
+  "author": {
+    "name": "0ta Utan"
+  },
+  "license": "MIT",
+  "version": "0.0.1",
+  "scripts": {
+    "generate-types": "typechain --target=truffle-v5 'client/src/contracts/*.json'",
+    "migrate": "tsc -p ./tsconfig.migration.json && truffle migrate",
+    "typecheck": "truffle compile && yarn generate-types && tsc --noEmit",
+    "test": "tsc -p ./tsconfig.test.json && truffle test"
+  },
+  "dependencies": {
+    "truffle": "^5.1.22",
+    "web3": "^1",
+    "web3-core": "^1",
+    "web3-eth-contract": "^1",
+    "web3-utils": "^1"
+  },
+  "devDependencies": {
+    "@typechain/truffle-v5": "^8.0.1",
+    "@types/bn.js": "^4.11.6",
+    "@types/chai": "^4.2.11",
+    "@types/mocha": "^7.0.2",
+    "@types/web3": "^1.2.2",
+    "truffle-typings": "^1.0.8",
+    "ts-node": "^10.9.1",
+    "typechain": "^8.1.0",
+    "typescript": "^4.6"
+  }
+}
