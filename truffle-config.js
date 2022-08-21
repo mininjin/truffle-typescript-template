@@ -2,7 +2,8 @@
  * See https://trufflesuite.com/docs/truffle/reference/configuration fo details
  */
 
-require("ts-node/register");
+// when import TypeScript files.
+// require("ts-node/register");
 
 module.exports = {
   // directory configs
