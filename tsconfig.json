@@ -32,9 +32,7 @@
   ],
   "exclude": [
     "node_modules",
-    "cache",
     "build",
-    "artifacts",
     "client"
   ]
 }
