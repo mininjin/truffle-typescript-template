@@ -10,7 +10,7 @@ module.exports = {
   contracts_build_directory: "./build/contracts",
   test_directory: "./build/test",
   migrations_directory: "./build/migrations",
-  // netwrok config
+  // network config
   networks: {
     // local server by Ganache
     development: {
